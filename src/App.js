@@ -11,12 +11,13 @@ import ProductDetail from "./Pages/ProductDetail";
 import Cart from "./Pages/Cart";
 import Favorites from "./Pages/Favorites";
 import Carousel from "./Components/Carousel";
+import { CarouselData } from "./Components/Carousel/CarouselData";
 
 function App() {
   return (
     <div className="container mx-auto">
       <Navbar />
-      <Carousel />
+      <Carousel slides={CarouselData} />
       <Container>
         <Routes>
           <Route path="/" exact element={<Products />} />
